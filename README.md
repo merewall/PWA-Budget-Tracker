@@ -80,15 +80,15 @@ _If accessing deployed Heroku application..._
 
 _Budget Tracker in Browser:_
 
-<img src="https://github.com/merewall/PWA-Budget-Tracker/blob/main/public/assets/images/homepage.png" alt="desktop view of budget tracker homepage" width="600px" height="300px">
+<img src="https://github.com/merewall/PWA-Budget-Tracker/blob/main/public/assets/images/homepage.png" alt="desktop view of budget tracker homepage" width="500px" height="350px">
 
 _Budget Tracker Installed:_
 
-<img src="https://github.com/merewall/PWA-Budget-Tracker/blob/main/public/assets/images/installed.png" alt="installed view of budget tracker app" width="300px" height="500px">
+<img src="https://github.com/merewall/PWA-Budget-Tracker/blob/main/public/assets/images/installed.png" alt="installed view of budget tracker app" width="500px" height="350px">
 
 _IndexedDB and Cache:_
 
-<img src="https://github.com/merewall/PWA-Budget-Tracker/blob/main/public/assets/images/application.png" alt="desktop view of IndexedDB storage and Cache while offline" width="600px" height="300px">
+<img src="https://github.com/merewall/PWA-Budget-Tracker/blob/main/public/assets/images/application.png" alt="desktop view of IndexedDB storage and Cache while offline" width="500px" height="300px">
 
 ## LICENSE
 
