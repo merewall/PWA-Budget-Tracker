@@ -47,5 +47,19 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
   <script src="assets/js/db.js"></script>
   <script src="assets/js/index.js"></script>
+  <script>
+    // Checks to see if we have a property of serviceWorker within the object of navigator
+    // this check is in place because older browsers can't use service workers
+    if ("serviceWorker" in navigator) {
+      // when window loads
+      window.addEventListener("load", () => {
+        // register a file called service-worker.js
+        navigator.serviceWorker.register("service-worker.js").then(reg => {
+          // when service worker has registered, console log message and object of registered
+          console.log("We found your service worker file!", reg);
+        });
+      });
+    }
+  </script>
 </body>
 </html>
