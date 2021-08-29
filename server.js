@@ -34,7 +34,7 @@ const connectDb = async () => {
   .then(() => {
     console.log("Connected to database!")
   })
-  .catch(() => {
+  .catch((err) => {
     console.log(err)
   })
 }
