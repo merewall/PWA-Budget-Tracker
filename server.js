@@ -21,25 +21,34 @@ app.use(express.static("public"));
 // });
 // ASYNC AWAIT FOR MONGOOSE DATABASE CONNECTION
 // CONSULTED CODE HERE: https://stackoverflow.com/questions/54890608/how-to-use-async-await-with-mongoose
-const connectDb = async () => {
-  await mongoose.connect(
-    process.env.MONGODB_URI || 'mongodb://localhost/budget',
-    {
-      useNewUrlParser:true,
-      useCreateIndex:true,
-      useFindAndModify:false,
-      useUnifiedTopology: true 
-    }
-  )
-  .then(() => {
-    console.log("Connected to database!")
-  })
-  .catch((err) => {
-    console.log(err)
-  })
-}
+// const connectDb = async () => {
+//   await mongoose.connect(
+//     process.env.MONGODB_URI || 'mongodb://localhost/budget',
+//     {
+//       useNewUrlParser:true,
+//       useCreateIndex:true,
+//       useFindAndModify:false,
+//       useUnifiedTopology: true 
+//     }
+//   )
+//   .then(() => {
+//     console.log("Connected to database!")
+//   })
+//   .catch((err) => {
+//     console.log(err)
+//   })
+// }
 // CONNECT TO MONGOOSE DATABASE OR CATCH & CONSOLE LOG ERROR
-connectDb().catch(err => console.log(err))
+// connectDb().catch(err => console.log(err))
+mongoose.connect("mongodb://localhost/budget", 
+  {
+    useNewUrlParser:true,
+    useCreateIndex:true,
+    useFindAndModify:false,
+    useUnifiedTopology: true
+  
+  }
+);
 
 // routes
 app.use(require("./routes/api.js"));
