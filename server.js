@@ -40,7 +40,7 @@ app.use(express.static("public"));
 // }
 // CONNECT TO MONGOOSE DATABASE OR CATCH & CONSOLE LOG ERROR
 // connectDb().catch(err => console.log(err))
-mongoose.connect("mongodb://localhost/budget", 
+mongoose.connect('mongodb://localhost/budget', 
   {
     useNewUrlParser:true,
     useCreateIndex:true,
